@@ -3,6 +3,7 @@ vendor/bundle/
 coverage/
 .yardoc/
 doc/
+student-work/
 tmp/
 *.gem
 transcript.json

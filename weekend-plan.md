@@ -12,7 +12,6 @@ Do:
 
 - Read the Basic Ruby entries in `reading-map.md`.
 - Run the numbered examples in `basic/01-syntax-semantics/examples/`.
-- Use `basic/01-syntax-semantics/examples/traps.rb` as a combined review after the numbered examples.
 - Modify one numbered example to predict then verify `nil`, `false`, `0`, empty arrays, symbol/string hash keys, `==`, `eql?`, and `equal?`.
 - Add three trap notes to `ruby-rosetta-stone.md`.
 

@@ -28,10 +28,7 @@ ruby basic/01-syntax-semantics/examples/02_equality.rb
 ruby basic/01-syntax-semantics/examples/03_hash_keys.rb
 ruby basic/01-syntax-semantics/examples/04_barewords.rb
 ruby basic/01-syntax-semantics/examples/05_pattern_matching.rb
-ruby basic/01-syntax-semantics/examples/traps.rb
 ```
-
-Run the numbered examples first. Use `traps.rb` as a combined review after the individual concepts are familiar.
 
 ## Exercises
 

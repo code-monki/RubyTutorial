@@ -120,16 +120,6 @@ Exit:
 - Use pattern matching for shape checks.
 - Avoid replacing simple conditionals with pattern matching when it does not clarify the code.
 
-### Combined Review
-
-Run:
-
-```sh
-ruby basic/01-syntax-semantics/examples/traps.rb
-```
-
-Use this after the atomic examples. It combines the same concepts so you can practice reading several Ruby behaviors in one file.
-
 ## Intermediate Ruby
 
 ### Enumerable Protocol
@@ -245,4 +235,3 @@ Exit:
 
 - Inspect Ruby source without executing it.
 - Explain when static analysis is safer than runtime hooks.
-

@@ -4,6 +4,8 @@ This file maps each concept to a small reading target, one focused code example,
 
 Use it when you know programming already but do not yet know how Ruby expresses the concept.
 
+If official Ruby examples use unfamiliar shorthand such as `p`, `#=>`, `Class#method`, or `=>`, read [Ruby Doc Decoder](docs/ruby-doc-decoder.md).
+
 ## Basic Ruby
 
 ### Truthiness And Absence
@@ -110,6 +112,7 @@ Note:
 - In a pattern, `String => content` means "match a `String`, then bind the matched value to the local variable `content`."
 - The standalone form `value => pattern` checks that `value` matches `pattern` and raises `NoMatchingPatternError` if it does not.
 - This is different from the older hash-rocket syntax, such as `{ "role" => "user" }`, which creates a hash key/value pair.
+- For more documentation notation, see [Ruby Doc Decoder](docs/ruby-doc-decoder.md).
 
 Run:
 

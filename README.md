@@ -19,6 +19,7 @@ The continuing project begins as a tiny message/transcript model and gradually b
 
 - [curriculum.md](curriculum.md) - full sequence, lesson objectives, exit criteria, and design warnings.
 - [reading-map.md](reading-map.md) - concept-to-reading-to-code map for structured study.
+- [docs/ruby-doc-decoder.md](docs/ruby-doc-decoder.md) - notation and shorthand used in Ruby docs.
 - [ruby-rosetta-stone.md](ruby-rosetta-stone.md) - concept-first comparisons against other languages.
 - [references/research-notes.md](references/research-notes.md) - current primary sources and ecosystem notes.
 - [LICENSE.md](LICENSE.md) - Creative Commons Attribution-ShareAlike 4.0 International for curriculum/documentation.

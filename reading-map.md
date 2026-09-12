@@ -23,7 +23,9 @@ ruby basic/01-syntax-semantics/examples/01_truthiness.rb
 
 Modify:
 
-- Add `""`, `"false"`, `:symbol`, and `Object.new`.
+- In `01_truthiness.rb`, add more values to the array being checked. Include `"false"`, `:symbol`, and `Object.new`.
+- Before running the file, write down whether each new value should print `truthy` or `falsey`.
+- Run the file and compare Ruby's behavior with your prediction.
 
 Exit:
 
@@ -46,9 +48,9 @@ ruby basic/01-syntax-semantics/examples/02_equality.rb
 
 Modify:
 
-- Compare two arrays with the same contents.
-- Compare two symbols with the same name.
-- Add a custom class with `==`.
+- In `02_equality.rb`, add two arrays with the same contents, such as `[1, 2]` and `[1, 2]`. Print the result of `==`, `eql?`, and `equal?`.
+- Add two symbols with the same name, such as `:ruby` and `:ruby`. Print the result of `==`, `eql?`, and `equal?`.
+- Add a small custom class with one attribute. First run it without defining `==`, then define `==` and compare the output.
 
 Exit:
 
@@ -69,9 +71,9 @@ ruby basic/01-syntax-semantics/examples/03_hash_keys.rb
 
 Modify:
 
-- Add a nested hash.
-- Fetch a missing key with `fetch`.
-- Add a default value and observe the behavior.
+- In `03_hash_keys.rb`, add a nested hash such as `{ message: { role: "user" } }`. Fetch the nested role using symbol keys.
+- Add a `fetch` call for a key that does not exist. Rescue `KeyError` and print the error class, as the example already does.
+- Create a new hash with a default value, such as `Hash.new(0)`. Read a missing key and print the result.
 
 Exit:
 
@@ -93,8 +95,9 @@ ruby basic/01-syntax-semantics/examples/04_barewords.rb
 
 Modify:
 
-- Add parentheses to every method call with arguments.
-- Remove only the parentheses that improve readability when omitted.
+- In `04_barewords.rb`, add parentheses to every method call that passes arguments, such as `puts(greet("Ruby"))`.
+- Run the file and confirm the output is unchanged.
+- Remove parentheses only from calls where the result is still easy to read. Leave parentheses on nested calls or calls with multiple arguments.
 
 Exit:
 
@@ -122,9 +125,9 @@ ruby basic/01-syntax-semantics/examples/05_pattern_matching.rb
 
 Modify:
 
-- Add a pattern for an assistant message.
-- Add an unmatched shape and handle it explicitly.
-- Add one standalone `message => pattern` example that binds two local variables.
+- In `05_pattern_matching.rb`, change `message` to use `role: "assistant"` and confirm the assistant branch runs.
+- Add a second message hash that is missing `content`. Match it with `case/in` and make the `else` branch print `unknown message shape`.
+- Add one standalone `message => pattern` example that binds both `role` and `content`, then print both local variables.
 
 Exit:
 
@@ -149,7 +152,10 @@ ruby -Ilib intermediate/01-enumerable-and-iterators/examples/custom_transcript_e
 
 Modify:
 
-- Add one query implemented first as a loop, then as an Enumerable chain.
+- In `intermediate/01-enumerable-and-iterators/examples/custom_transcript_each.rb`, add a query that returns only messages whose content includes `"group"`.
+- First implement the query with an explicit `each` loop and an output array.
+- Then implement the same query with `select`.
+- Print both results and confirm they contain the same messages.
 
 Exit:
 
@@ -175,8 +181,10 @@ ruby -Ilib intermediate/02-testing-packaging-performance/examples/allocation_pro
 
 Modify:
 
-- Add a single-pass version of `Transcript#word_tally`.
-- Compare its allocations with the existing implementation.
+- In `lib/agent_lab/transcript.rb`, add a new method named `word_tally_single_pass`.
+- Implement it with one explicit pass over `messages` and one explicit pass over each message's scanned words.
+- Update `intermediate/02-testing-packaging-performance/examples/allocation_probe.rb` to measure both `word_tally` and `word_tally_single_pass`.
+- Run the allocation probe and write down which version allocated fewer objects in your environment.
 
 Exit:
 
@@ -202,7 +210,9 @@ ruby advanced/01-object-model-metaprogramming/examples/lookup_chain.rb
 
 Modify:
 
-- Add one `include` example and compare it with `prepend`.
+- In `advanced/01-object-model-metaprogramming/examples/lookup_chain.rb`, add a second module and include it with `include` instead of `prepend`.
+- Print `MessageLike.ancestors` after the change.
+- Compare where the included module appears in the lookup chain versus the prepended module.
 
 Exit:
 
@@ -227,7 +237,9 @@ ruby -Ilib advanced/01-object-model-metaprogramming/examples/capability_dsl.rb
 
 Modify:
 
-- Rewrite the DSL declaration as explicit object construction.
+- In `advanced/01-object-model-metaprogramming/examples/capability_dsl.rb`, add an explicit `AgentLab::Capability.new(...)` version of the `:shout` capability below the DSL version.
+- Build a second `AgentLab::Agent` using the explicit capability.
+- Call both agents and confirm they return the same result.
 
 Exit:
 
@@ -248,7 +260,9 @@ ruby advanced/02-runtime-networking-ast/examples/prism_calls.rb
 
 Modify:
 
-- Report line numbers for each call if the Prism node exposes location data.
+- In `advanced/02-runtime-networking-ast/examples/prism_calls.rb`, change the `calls` array so each entry stores both the call name and the source line number.
+- Use the node's location object if it exposes a line number.
+- Print one call per line in the format `line_number: method_name`.
 
 Exit:
 

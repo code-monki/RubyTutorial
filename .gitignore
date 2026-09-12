@@ -1,0 +1,9 @@
+.bundle/
+vendor/bundle/
+coverage/
+.yardoc/
+doc/
+tmp/
+*.gem
+transcript.json
+

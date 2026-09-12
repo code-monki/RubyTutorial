@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+# SPDX-License-Identifier: MIT
+
+require "fileutils"
+
+ROOT = File.expand_path("..", __dir__)
+
+Dir.chdir(ROOT) do
+  puts "Ruby: #{RUBY_VERSION}"
+
+  unless File.exist?("Gemfile")
+    warn "Gemfile not found; run this from the repository root."
+    exit 1
+  end
+
+  system("bundle", "config", "set", "--local", "path", "vendor/bundle", exception: true)
+  system("bundle", "install", exception: true)
+
+  FileUtils.mkdir_p("tmp")
+  puts "Setup complete. Run: bundle exec ruby -Ilib test/all_test.rb"
+end

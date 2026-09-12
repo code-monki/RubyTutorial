@@ -6,7 +6,7 @@ This is not a beginner programming course. It is a focused review of Ruby 4.x sy
 
 ## How To Use This Repository
 
-Start with `weekend-plan.md` if you want the first two days to be productive. Then move through:
+Start with [weekend-plan.md](weekend-plan.md) if you want the first two days to be productive. Then move through:
 
 1. `basic/` - syntax, semantics, blocks, files, simple command-line programs.
 2. `intermediate/` - idiomatic program design, Enumerable, tests, packaging, typing, concurrency, performance, and selected data structures.
@@ -17,14 +17,14 @@ The continuing project begins as a tiny message/transcript model and gradually b
 
 ## Repository Map
 
-- `curriculum.md` - full sequence, lesson objectives, exit criteria, and design warnings.
-- `ruby-rosetta-stone.md` - concept-first comparisons against other languages.
-- `references/research-notes.md` - current primary sources and ecosystem notes.
-- `LICENSE.md` - Creative Commons Attribution-ShareAlike 4.0 International for curriculum/documentation.
-- `LICENSE-CODE.md` - MIT License for runnable code, examples, tests, and scripts.
-- `lib/agent_lab/` - small Ruby library used by examples and tests.
-- `labs/algorithms/` - selected data-structure and algorithm labs used as Ruby-learning laboratories.
-- `test/` - Minitest tests for the runnable examples.
+- [curriculum.md](curriculum.md) - full sequence, lesson objectives, exit criteria, and design warnings.
+- [ruby-rosetta-stone.md](ruby-rosetta-stone.md) - concept-first comparisons against other languages.
+- [references/research-notes.md](references/research-notes.md) - current primary sources and ecosystem notes.
+- [LICENSE.md](LICENSE.md) - Creative Commons Attribution-ShareAlike 4.0 International for curriculum/documentation.
+- [LICENSE-CODE.md](LICENSE-CODE.md) - MIT License for runnable code, examples, tests, and scripts.
+- [lib/agent_lab/](lib/agent_lab/) - small Ruby library used by examples and tests.
+- [labs/algorithms/](labs/algorithms/) - selected data-structure and algorithm labs used as Ruby-learning laboratories.
+- [test/](test/) - Minitest tests for the runnable examples.
 
 ## Running The Code
 
@@ -103,7 +103,7 @@ Docker and Vagrant are useful when you need OS-level reproducibility, services, 
 
 Use Docker later when a lesson needs databases, Redis, native libraries, or CI/deployment parity. Treat Vagrant as historical/contextual unless a full VM is specifically useful.
 
-For deeper setup notes, read `setup/ruby-environment.md`. Later lessons deliberately introduce Bundler, gems, RuboCop, RBS/Steep or Sorbet, benchmarking gems, and package structure.
+For deeper setup notes, read [setup/ruby-environment.md](setup/ruby-environment.md). Later lessons deliberately introduce Bundler, gems, RuboCop, RBS/Steep or Sorbet, benchmarking gems, and package structure.
 
 ## What This Curriculum Optimizes For
 
@@ -119,7 +119,7 @@ It also treats idiom as a choice to evaluate. Ruby can make APIs concise and exp
 
 This repository uses a split license:
 
-- Curriculum text, explanations, lesson plans, exercises, and reference notes: Creative Commons Attribution-ShareAlike 4.0 International, `CC BY-SA 4.0`. See `LICENSE.md`.
-- Runnable code examples, tests, scripts, and project source files: MIT License. See `LICENSE-CODE.md`.
+- Curriculum text, explanations, lesson plans, exercises, and reference notes: Creative Commons Attribution-ShareAlike 4.0 International, `CC BY-SA 4.0`. See [LICENSE.md](LICENSE.md).
+- Runnable code examples, tests, scripts, and project source files: MIT License. See [LICENSE-CODE.md](LICENSE-CODE.md).
 
 The intent is simple: share-alike for the educational material, permissive reuse for the code.

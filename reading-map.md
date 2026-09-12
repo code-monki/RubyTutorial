@@ -10,8 +10,8 @@ Use it when you know programming already but do not yet know how Ruby expresses 
 
 Read:
 
-- Ruby docs for control expressions and conditionals.
-- Ruby docs for `nil` and `false`.
+- [Ruby control expressions](https://docs.ruby-lang.org/en/4.0/syntax/control_expressions_rdoc.html), especially the opening truth-value rule and `if`/`unless`.
+- [`NilClass`](https://docs.ruby-lang.org/en/4.0/NilClass.html) and [`FalseClass`](https://docs.ruby-lang.org/en/4.0/FalseClass.html).
 
 Run:
 
@@ -32,8 +32,9 @@ Exit:
 
 Read:
 
-- Ruby docs for `Object#==`, `Object#eql?`, `Object#equal?`, and `Object#===`.
-- Ruby docs for `Hash` key behavior.
+- [`BasicObject#==`, `#eql?`, and `#equal?`](https://docs.ruby-lang.org/en/4.0/BasicObject.html).
+- [Ruby control expressions](https://docs.ruby-lang.org/en/4.0/syntax/control_expressions_rdoc.html), especially `case` and `===`.
+- [`Hash`](https://docs.ruby-lang.org/en/4.0/Hash.html), especially key equality.
 
 Run:
 
@@ -55,8 +56,8 @@ Exit:
 
 Read:
 
-- Ruby docs for `Hash`.
-- Ruby docs for `Symbol`.
+- [`Hash`](https://docs.ruby-lang.org/en/4.0/Hash.html).
+- [`Symbol`](https://docs.ruby-lang.org/en/4.0/Symbol.html).
 
 Run:
 
@@ -79,8 +80,8 @@ Exit:
 
 Read:
 
-- Ruby syntax docs for method calls.
-- Ruby syntax docs for assignment and local variables.
+- [Calling methods](https://docs.ruby-lang.org/en/4.0/syntax/calling_methods_rdoc.html).
+- [Assignment](https://docs.ruby-lang.org/en/4.0/syntax/assignment_rdoc.html), especially local variable parsing.
 
 Run:
 
@@ -102,7 +103,7 @@ Exit:
 
 Read:
 
-- Ruby docs for pattern matching.
+- [Pattern matching](https://docs.ruby-lang.org/en/4.0/syntax/pattern_matching_rdoc.html).
 
 Run:
 
@@ -126,8 +127,8 @@ Exit:
 
 Read:
 
-- Ruby docs for `Enumerable`.
-- Ruby docs for `Enumerator`.
+- [`Enumerable`](https://docs.ruby-lang.org/en/4.0/Enumerable.html).
+- [`Enumerator`](https://docs.ruby-lang.org/en/4.0/Enumerator.html).
 
 Run:
 
@@ -149,8 +150,10 @@ Exit:
 
 Read:
 
-- Ruby docs for Minitest.
-- Ruby docs for `Benchmark`, `GC`, and `ObjectSpace`.
+- [Minitest documentation](https://docs.seattlerb.org/minitest/).
+- [`Benchmark`](https://docs.ruby-lang.org/en/4.0/Benchmark.html).
+- [`GC`](https://docs.ruby-lang.org/en/4.0/GC.html).
+- [`ObjectSpace`](https://docs.ruby-lang.org/en/4.0/ObjectSpace.html).
 
 Run:
 
@@ -175,8 +178,10 @@ Exit:
 
 Read:
 
-- Ruby docs for modules and classes.
-- Ruby docs for `Module#ancestors`, `Object#singleton_class`, and method objects.
+- [Ruby FAQ: method lookup](https://www.ruby-lang.org/en/documentation/faq/7/).
+- [`Module`](https://docs.ruby-lang.org/en/4.0/Module.html), especially `ancestors`, `include`, `prepend`, and `define_method`.
+- [`BasicObject#singleton_method_added`](https://docs.ruby-lang.org/en/4.0/BasicObject.html) and method-related object behavior.
+- [`Method`](https://docs.ruby-lang.org/en/4.0/Method.html).
 
 Run:
 
@@ -197,8 +202,11 @@ Exit:
 
 Read:
 
-- Ruby docs for blocks, `instance_eval`, and `define_method`.
-- Ruby docs for `TracePoint`.
+- [Calling methods: block arguments](https://docs.ruby-lang.org/en/4.0/syntax/calling_methods_rdoc.html).
+- [`Proc`](https://docs.ruby-lang.org/en/4.0/Proc.html).
+- [`BasicObject#instance_eval`](https://docs.ruby-lang.org/en/4.0/BasicObject.html).
+- [`Module#define_method`](https://docs.ruby-lang.org/en/4.0/Module.html).
+- [`TracePoint`](https://docs.ruby-lang.org/en/4.0/TracePoint.html).
 
 Run:
 
@@ -219,7 +227,7 @@ Exit:
 
 Read:
 
-- Ruby Prism docs.
+- [`Prism`](https://docs.ruby-lang.org/en/4.0/Prism.html).
 
 Run:
 

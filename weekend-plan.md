@@ -10,10 +10,10 @@ Outcome: You can read and write contemporary Ruby method calls, blocks, literals
 
 Do:
 
-- Read the Basic Ruby entries in `reading-map.md`.
+- Read the Basic Ruby entries in `reading-map.md`, one concept at a time.
 - Run the numbered examples in `basic/01-syntax-semantics/examples/`.
-- Modify one numbered example to predict then verify `nil`, `false`, `0`, empty arrays, symbol/string hash keys, `==`, `eql?`, and `equal?`.
-- Add three trap notes to `ruby-rosetta-stone.md`.
+- Modify one numbered example using its `Modify:` instructions from `reading-map.md`.
+- Add three notes to `ruby-rosetta-stone.md` about Ruby behavior that differs from another language you know.
 
 Exit criteria:
 
@@ -30,8 +30,9 @@ Outcome: You can reach for blocks, custom `each`, lazy enumeration, and Enumerat
 Do:
 
 - Run `intermediate/01-enumerable-and-iterators/examples/custom_transcript_each.rb`.
-- Implement one new transcript query using `Enumerable`.
-- Compare the obvious loop against the idiomatic version.
+- In that file, add one transcript query using an explicit `each` loop.
+- Add the same query again using `Enumerable#select`.
+- Print both results and confirm they return the same messages.
 
 Exit criteria:
 
@@ -47,9 +48,10 @@ Outcome: You can build a small command-line Ruby program using `OptionParser`, f
 
 Do:
 
-- Run `basic/02-cli-agent-log/examples/agent_log.rb --help`.
-- Add and list messages in a temporary transcript file.
-- Add one validation rule in `lib/agent_lab/message.rb`.
+- Run `ruby -Ilib basic/02-cli-agent-log/examples/agent_log.rb --help`.
+- Add one user message to a temporary transcript file.
+- List the transcript file and confirm the message appears.
+- Add a CLI-level check that prints a clear error when `add` is run with empty content. Do not edit `lib/agent_lab/message.rb` in this segment; class internals come later.
 
 Exit criteria:
 
@@ -67,7 +69,8 @@ Do:
 
 - Run `ruby -Ilib test/all_test.rb`.
 - Read `labs/algorithms/quicksort.rb`.
-- Add a test that documents how duplicates are handled.
+- In `test/algorithm_test.rb`, read the existing duplicate-handling test for Quicksort.
+- Add one new test for already-sorted input.
 
 Exit criteria:
 
@@ -85,7 +88,7 @@ Do:
 
 - Run `advanced/01-object-model-metaprogramming/examples/lookup_chain.rb`.
 - Predict where singleton methods live.
-- Read the devil's-advocate notes on monkey-patching.
+- Read the design warning on monkey-patching in `curriculum.md`.
 
 Exit criteria:
 

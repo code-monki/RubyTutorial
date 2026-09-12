@@ -85,6 +85,10 @@ Design warning:
 
 - Block-based APIs can make control flow hard to see. Use blocks when they make the caller's intent clearer, and avoid using them to hide policy or side effects inside a method call.
 
+Practice:
+
+- Return to `basic/02-cli-agent-log/examples/agent_log.rb` and add a `search TERM` command that prints messages whose content includes `TERM`.
+
 ### B3. Small CLI Programs With Standard Library
 
 Natural thought after the lesson: "I can build useful Ruby scripts without reaching for Rails-shaped habits."
@@ -119,6 +123,11 @@ Exit criteria:
 - You can explain when an Enumerable chain allocates avoidably.
 - You can write an iterator that behaves like a good Ruby citizen.
 
+Practice:
+
+- Rewrite the `agent_log` search command with `Enumerable#select`.
+- After reading `Enumerator::Lazy`, write down how a lazy transcript search would change memory use for a very large transcript.
+
 Algorithm labs:
 
 - Stack/queue/deque: objective is object API shape, mutation boundaries, and Enumerable participation.
@@ -140,6 +149,10 @@ Exit criteria:
 - You can justify whether an agent concept should be a class, module, value object, callable object, or plain hash.
 - You can define equality intentionally.
 - You can name which objects are allowed to mutate.
+
+Practice:
+
+- Create a small value object with one attribute. Compare two instances before defining `==`, then define `==` and compare the result.
 
 Design warning:
 
@@ -176,6 +189,10 @@ Exit criteria:
 - You can explain why `require` fails.
 - You can create a gem skeleton and know which files matter.
 - You can distinguish app dependency management from library dependency constraints.
+
+Practice:
+
+- Convert `agent_lab` into a minimal gem skeleton while keeping the curriculum repository readable.
 
 ### I5. Optional Typing: RBS, Steep, Sorbet
 
@@ -290,6 +307,10 @@ Exit criteria:
 - You can distinguish protocol parsing from agent behavior.
 - You can name timeout, backpressure, and deserialization hazards.
 
+Practice:
+
+- Build a line-oriented TCP echo server for agent messages.
+
 ### A5. AST, Parser Work, And Static Analysis
 
 Natural thought after the lesson: "I can inspect Ruby source as data using contemporary parser tools."
@@ -320,6 +341,10 @@ Exit criteria:
 - You can run Ruby with JIT flags and interpret high-level results cautiously.
 - You can explain why native extensions complicate packaging.
 - You can make a principled call on Ruby for agent framework internals.
+
+Practice:
+
+- Run one benchmark with and without JIT flags. Record the exact command, Ruby version, hardware, and why the result may not generalize.
 
 ## Ecosystem Survey
 

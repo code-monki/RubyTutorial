@@ -19,10 +19,10 @@ ruby -Ilib intermediate/01-enumerable-and-iterators/examples/custom_transcript_e
 
 ## Exercises
 
-1. Add `Transcript#between(start_time, end_time)`.
-2. Implement the query first with a loop, then with `select`.
-3. Add a lazy version for streaming very large transcripts.
-4. Benchmark or at least reason about intermediate allocation.
+1. In `custom_transcript_each.rb`, add a query that returns messages whose content includes `"group"`.
+2. Implement the query first with an explicit `each` loop and an output array.
+3. Implement the same query again with `select`.
+4. Print both results and confirm they contain the same message content.
 
 ## Exit Criteria
 

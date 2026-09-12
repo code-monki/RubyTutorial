@@ -20,10 +20,11 @@ ruby -Ilib intermediate/02-testing-packaging-performance/examples/allocation_pro
 
 ## Exercises
 
-1. Add a test for `Transcript#by_role`.
-2. Add a `Gemfile` with RuboCop as a development dependency.
-3. Convert the project into a gem skeleton, but keep this curriculum repo readable.
-4. Compare `word_tally` with a single-pass implementation.
+1. In `test/agent_lab_test.rb`, add a test for `Transcript#by_role`.
+2. Run `ruby -Ilib test/all_test.rb` and confirm the new test fails before the implementation is changed or passes if the method already behaves correctly.
+3. Read the existing `Gemfile` and identify which gem group contains RuboCop.
+4. In `lib/agent_lab/transcript.rb`, add `word_tally_single_pass`.
+5. Update `allocation_probe.rb` to compare `word_tally` and `word_tally_single_pass`.
 
 ## Exit Criteria
 

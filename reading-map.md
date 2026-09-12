@@ -55,7 +55,7 @@ Modify:
 Exit:
 
 - Choose the right equality method for comparison, hash keys, and identity.
-- Explain why custom object equality is deferred until classes and method definitions have been introduced.
+- Leave custom object equality for the Object Modeling lesson, where classes and method definitions are introduced.
 
 ### Symbols, Strings, And Hash Keys
 

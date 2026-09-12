@@ -33,9 +33,9 @@ ruby basic/01-syntax-semantics/examples/05_pattern_matching.rb
 ## Exercises
 
 1. Before running each numbered example, predict every printed line.
-2. Add one new case to each numbered example.
-3. Add examples for `case` using `===`.
-4. Rewrite one snippet with explicit parentheses, then decide which version is clearer.
+2. Follow the `Modify:` instructions for each Basic Ruby entry in [../../reading-map.md](../../reading-map.md).
+3. In `02_equality.rb`, add one `case` example that uses `String` or `Integer` and observe how `===` is used.
+4. In `04_barewords.rb`, rewrite one nested call with explicit parentheses, then decide which version is easier to read.
 
 ## Exit Criteria
 

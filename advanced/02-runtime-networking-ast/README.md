@@ -13,10 +13,11 @@ You will treat Ruby as both a language and a runtime: parseable source, observab
 
 ## Exercises
 
-1. Build a line-oriented TCP message echo server.
-2. Parse `capability_dsl.rb` with Prism and list method calls.
-3. Add TracePoint instrumentation around capability execution.
-4. Run a benchmark with and without JIT flags, then write down why the result may not generalize.
+1. Run `examples/prism_calls.rb` and confirm it lists method calls from `capability_dsl.rb`.
+2. Update `examples/prism_calls.rb` so it prints each call with a source line number when Prism exposes one.
+3. Add TracePoint instrumentation around capability execution and print the method name being called.
+4. Build a line-oriented TCP echo server for agent messages.
+5. Run one benchmark with and without JIT flags, then write down the exact command, Ruby version, hardware, and why the result may not generalize.
 
 ## Exit Criteria
 

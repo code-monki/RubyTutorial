@@ -15,4 +15,4 @@ transcript.word_tally
 after = GC.stat(:total_allocated_objects)
 
 puts "Objects allocated during word_tally: #{after - before}"
-puts "Now rewrite it as a single-pass method and compare."
+puts "Next: add Transcript#word_tally_single_pass, measure it here, and compare allocations."

@@ -20,10 +20,11 @@ ruby -Ilib advanced/01-object-model-metaprogramming/examples/capability_dsl.rb
 
 ## Exercises
 
-1. Add a `prepend` module and observe lookup order.
-2. Convert the DSL example into explicit object construction.
-3. Add source-location reporting for a declared capability.
-4. Write a paragraph arguing against the DSL you just built.
+1. In `lookup_chain.rb`, add a second module and use `include` for that module.
+2. Print `MessageLike.ancestors` and compare the position of the included module with the prepended module.
+3. In `capability_dsl.rb`, create the same `:shout` capability through explicit `AgentLab::Capability.new(...)` construction.
+4. Build one agent with the DSL capability and one agent with the explicit capability. Confirm both return the same result.
+5. Write a short paragraph naming one benefit and one debugging cost of the DSL version.
 
 ## Exit Criteria
 

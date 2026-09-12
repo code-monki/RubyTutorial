@@ -20,9 +20,8 @@ ruby -Ilib basic/02-cli-agent-log/examples/agent_log.rb --file /tmp/agent.json l
 
 ## Exercises
 
-1. Add `--role assistant` validation at the CLI boundary before constructing `Message`.
-2. Add a `stats` command that prints count by role.
-3. Add a `search TERM` command using `Enumerable#grep` or `filter`.
+1. In `agent_log.rb`, add a CLI-level check that rejects `add` when no message content is provided. Print a clear error and exit without writing the file.
+2. Add a `stats` command that loads the transcript and prints one count per role.
 
 ## Exit Criteria
 

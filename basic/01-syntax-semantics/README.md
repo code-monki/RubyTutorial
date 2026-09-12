@@ -10,17 +10,34 @@ You will read modern Ruby source in Ruby's own grammar: receiver, method call, b
 - Predict truthiness and equality behavior without importing assumptions from Python, JavaScript, Java, C, or Lisp.
 - Recognize method-call ambiguity caused by optional parentheses and local-variable parsing.
 
+## Read
+
+Use [../../reading-map.md](../../reading-map.md) for the concept-by-concept reading list. For this lesson, focus on:
+
+- Truthiness and absence.
+- Equality and identity.
+- Symbols, strings, and hash keys.
+- Method calls, parentheses, and barewords.
+- Pattern matching.
+
 ## Run
 
 ```sh
+ruby basic/01-syntax-semantics/examples/01_truthiness.rb
+ruby basic/01-syntax-semantics/examples/02_equality.rb
+ruby basic/01-syntax-semantics/examples/03_hash_keys.rb
+ruby basic/01-syntax-semantics/examples/04_barewords.rb
+ruby basic/01-syntax-semantics/examples/05_pattern_matching.rb
 ruby basic/01-syntax-semantics/examples/traps.rb
 ```
 
+Run the numbered examples first. Use `traps.rb` as a combined review after the individual concepts are familiar.
+
 ## Exercises
 
-1. Before running the example, predict every printed line.
-2. Add examples for `case` using `===`.
-3. Add one block-local variable example.
+1. Before running each numbered example, predict every printed line.
+2. Add one new case to each numbered example.
+3. Add examples for `case` using `===`.
 4. Rewrite one snippet with explicit parentheses, then decide which version is clearer.
 
 ## Exit Criteria

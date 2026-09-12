@@ -6,7 +6,7 @@ This is not a beginner programming course. It is a focused review of Ruby 4.x sy
 
 ## How To Use This Repository
 
-Start with [weekend-plan.md](weekend-plan.md) if you want the first two days to be productive. Then move through:
+Start with [weekend-plan.md](weekend-plan.md) if you want the first two days to be productive. Use [reading-map.md](reading-map.md) to connect each concept to a primary reading, runnable example, modification task, and exit criteria. Then move through:
 
 1. `basic/` - syntax, semantics, blocks, files, simple command-line programs.
 2. `intermediate/` - idiomatic program design, Enumerable, tests, packaging, typing, concurrency, performance, and selected data structures.
@@ -18,6 +18,7 @@ The continuing project begins as a tiny message/transcript model and gradually b
 ## Repository Map
 
 - [curriculum.md](curriculum.md) - full sequence, lesson objectives, exit criteria, and design warnings.
+- [reading-map.md](reading-map.md) - concept-to-reading-to-code map for structured study.
 - [ruby-rosetta-stone.md](ruby-rosetta-stone.md) - concept-first comparisons against other languages.
 - [references/research-notes.md](references/research-notes.md) - current primary sources and ecosystem notes.
 - [LICENSE.md](LICENSE.md) - Creative Commons Attribution-ShareAlike 4.0 International for curriculum/documentation.

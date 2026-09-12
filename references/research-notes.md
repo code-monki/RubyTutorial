@@ -46,7 +46,7 @@ Sources:
 
 - RBS is the Ruby signature language. Its repository states that standard library signatures target the latest Ruby release, currently 4.0 as of 2026.
 - Sorbet remains a major production-oriented gradual typing option, with `srb` and `sorbet-runtime`.
-- Sorbet has experimental RBS comment support powered by Prism; curriculum should mark it experimental, not mainstream gospel.
+- Sorbet has experimental RBS comment support powered by Prism. Mark it as experimental and do not present it as the default typing workflow.
 
 Sources:
 
@@ -57,7 +57,7 @@ Sources:
 ## Style And Static Analysis
 
 - RuboCop remains the dominant linter/formatter ecosystem. It is configurable and modular; performance, Rails, RSpec, and Minitest checks live in extension gems.
-- Teach RuboCop as a tool for shared conventions and linting, not as an oracle of tasteful Ruby.
+- Teach RuboCop as a tool for shared conventions and linting. Do not present every RuboCop preference as a universal rule for good Ruby.
 
 Sources:
 
@@ -84,8 +84,8 @@ Source:
 
 ## Best-Practice Claims To Treat Skeptically
 
-- "Ruby is readable": only when the local idiom is honest and the magic is bounded.
-- "DSLs are Ruby's superpower": yes, and also a maintenance hazard when source locations, errors, and tooling are poor.
-- "Monkey-patching is bad": too simple. The real test is ownership, locality, reversibility, observability, and blast radius.
-- "Types do not belong in Ruby": also too simple. Stable boundaries and public APIs can benefit from signatures; exploratory internal code may not.
+- "Ruby is readable": Ruby is readable when the code uses local idioms consistently and keeps hidden behavior limited.
+- "DSLs are Ruby's superpower": DSLs are valuable when they improve the author's model and still provide clear errors, source locations, and debugging paths.
+- "Monkey-patching is bad": the useful question is whether the patch has clear ownership, locality, reversibility, observability, and a small blast radius.
+- "Types do not belong in Ruby": stable boundaries and public APIs can benefit from signatures; exploratory internal code may not.
 - "Rails is Ruby": historically understandable, technically false.

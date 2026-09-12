@@ -4,7 +4,7 @@
 
 Ruby may be an unusually good language for agent-framework ergonomics because blocks, keyword arguments, open classes, modules, and internal DSLs can express policies and capabilities elegantly.
 
-Ruby may also be a dangerous language for agent-framework internals because the same features can hide control flow, blur boundaries, complicate static analysis, and make runtime behavior too magical.
+Ruby may also be risky for agent-framework internals because the same features can hide control flow, blur boundaries, complicate static analysis, and make runtime behavior hard to inspect.
 
 The capstone is to find out by building something small enough to understand and real enough to criticize.
 
@@ -58,7 +58,7 @@ Judgment question:
 
 Judgment question:
 
-- Does the DSL improve the author's thinking, or merely create cute syntax?
+- Does the DSL make the author's intent clearer, or does it only reduce the number of characters typed?
 
 ### Stage 6: Networking And Protocols
 
@@ -90,4 +90,3 @@ Write a short technical memo:
 - Which features are framework-grade.
 - Which features are demo-grade.
 - Whether you would choose Ruby for an internal agent framework in 2026.
-

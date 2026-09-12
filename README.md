@@ -2,7 +2,7 @@
 
 For an experienced polyglot software architect returning to Ruby after roughly 25 years.
 
-This is not a beginner programming course. It is a cache-warming curriculum for Ruby 4.x syntax, semantics, idiom, tooling, and runtime behavior. The center of gravity is Ruby itself: Rails is surveyed, not worshipped.
+This is not a beginner programming course. It is a focused review of Ruby 4.x syntax, semantics, idiom, tooling, and runtime behavior. The center of gravity is Ruby itself. Rails is covered as an important part of the ecosystem, but it is not the organizing framework for the curriculum.
 
 ## How To Use This Repository
 
@@ -17,7 +17,7 @@ The continuing project begins as a tiny message/transcript model and gradually b
 
 ## Repository Map
 
-- `curriculum.md` - full sequence, lesson objectives, exit criteria, and adversarial notes.
+- `curriculum.md` - full sequence, lesson objectives, exit criteria, and design warnings.
 - `ruby-rosetta-stone.md` - concept-first comparisons against other languages.
 - `references/research-notes.md` - current primary sources and ecosystem notes.
 - `LICENSE.md` - Creative Commons Attribution-ShareAlike 4.0 International for curriculum/documentation.
@@ -107,13 +107,13 @@ For deeper setup notes, read `setup/ruby-environment.md`. Later lessons delibera
 
 ## What This Curriculum Optimizes For
 
-After a long absence from Ruby, the dangerous gap is not "can you write loops?" It is "do you naturally think in blocks, receivers, Enumerable chains, object openness, constants, keyword arguments, mutation boundaries, and the runtime consequences of cleverness?"
+After a long absence from Ruby, the dangerous gap is not "can you write loops?" It is "do you naturally think in blocks, receivers, Enumerable chains, object openness, constants, keyword arguments, mutation boundaries, and the runtime consequences of compact dynamic code?"
 
 This curriculum repeatedly asks:
 
 > What will I be able to think naturally in Ruby after this lesson that I could not before it?
 
-It also treats idiom as a hypothesis, not a costume. Ruby lets you make beautiful APIs and terrible invisible machinery with the same features. That is the point of studying it carefully.
+It also treats idiom as a choice to evaluate. Ruby can make APIs concise and expressive, but the same features can hide control flow and important side effects. The curriculum asks you to prefer clear Ruby over code that is impressive but harder to maintain.
 
 ## License
 

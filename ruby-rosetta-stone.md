@@ -45,7 +45,7 @@ Ruby:
 
 Trap:
 
-- The parser's local-variable decision can make code appear haunted. It is deterministic; learn the rule.
+- Ruby decides whether a bareword is a local variable based on assignment in the current scope. Learn this rule so bareword behavior is predictable.
 
 ## Blocks, Procs, Lambdas
 
@@ -154,4 +154,3 @@ Ruby:
 Trap:
 
 - "Ruby has threads" and "Ruby gives my CPU-bound code linear parallel speedup" are different statements.
-

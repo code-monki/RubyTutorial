@@ -33,7 +33,7 @@ Advanced form:
 - Use Prism to inspect DSL files.
 - Decide whether Ruby is attractive for agent frameworks and internal DSLs.
 
-The answer may be "yes, but only with taste." Ruby is unusually good at internal DSLs and human-oriented APIs. It is also unusually good at hiding consequential behavior behind pleasant syntax.
+The answer may be conditional. Ruby is strong at internal DSLs and human-oriented APIs, but those same features can hide control flow, dependency boundaries, and side effects. The capstone should evaluate both outcomes directly.
 
 ## Basic Ruby
 
@@ -51,7 +51,7 @@ Exit criteria:
 
 - You can predict receiver, arguments, block binding, and return value for small snippets.
 - You can explain Ruby truthiness: only `nil` and `false` are falsey.
-- You can identify when clever punctuation harms readability.
+- You can identify when compact punctuation makes code harder to read.
 
 Polyglot traps:
 
@@ -81,9 +81,9 @@ Exit criteria:
 - You can explain lambda/proc arity and return behavior.
 - You can avoid callback-shaped code when a simple object would be clearer.
 
-Devil's advocate:
+Design warning:
 
-- Ruby block APIs feel delightful until control flow becomes invisible. A block is not a license to smuggle policy into a method call.
+- Block-based APIs can make control flow hard to see. Use blocks when they make the caller's intent clearer, and avoid using them to hide policy or side effects inside a method call.
 
 ### B3. Small CLI Programs With Standard Library
 
@@ -99,13 +99,13 @@ Exit criteria:
 
 - You can add/list transcript messages from the command line.
 - You can keep the code small without making it a pile of globals.
-- You know when a gem would help and when it would merely decorate.
+- You know when a gem solves a real problem and when the standard library is enough.
 
 ## Intermediate Ruby
 
 ### I1. Enumerable, Custom Iterators, And Collection Design
 
-Natural thought after the lesson: "I can make my own objects participate in Ruby collection idioms honestly."
+Natural thought after the lesson: "I can make my own objects participate in Ruby collection idioms without surprising callers."
 
 Objectives:
 
@@ -141,9 +141,9 @@ Exit criteria:
 - You can define equality intentionally.
 - You can name which objects are allowed to mutate.
 
-Devil's advocate:
+Design warning:
 
-- Ruby's openness makes weak boundaries easy. Strong architecture in Ruby is mostly voluntary.
+- Ruby makes it easy to reopen classes, pass flexible objects, and defer checks until runtime. Use explicit boundaries, small public APIs, and tests because the language will not enforce those choices for you.
 
 ### I3. Testing Architecture
 
@@ -159,7 +159,7 @@ Exit criteria:
 
 - You can test the CLI edge separately from the message model.
 - You can write tests that document tricky Ruby semantics.
-- You can avoid over-mocking dynamic behavior into nonsense.
+- You can avoid mocks that make dynamic behavior harder to understand than the production code.
 
 ### I4. Packaging, Gems, Bundler, And Project Shape
 
@@ -217,7 +217,7 @@ Objectives:
 
 - Use `Benchmark`, `GC.stat`, `ObjectSpace`, `stackprof`/`memory_profiler` survey, and YJIT/ZJIT awareness.
 - Compare obvious, idiomatic, optimized, and library approaches.
-- Learn that microbenchmarks lie, but allocation counts often tell useful truths.
+- Learn that microbenchmarks often fail to predict real application behavior. Use allocation counts and focused profiling as supporting evidence, not as the whole argument.
 
 Exit criteria:
 
@@ -234,23 +234,23 @@ Natural thought after the lesson: "I can predict where Ruby will look next."
 Objectives:
 
 - Understand singleton classes, eigenclasses, method tables, ancestors, `prepend`, `include`, `extend`, constant lookup, `const_missing`, `method_missing`, and refinements.
-- Debug lookup chains and avoid spooky action.
+- Debug lookup chains so method behavior is visible and predictable.
 
 Exit criteria:
 
 - You can explain why a singleton method does not live on the object itself.
 - You can predict module precedence with `prepend` versus `include`.
-- You can spot constant lookup bugs before they become production folklore.
+- You can spot constant lookup bugs before they become recurring production issues.
 
 ### A2. Metaprogramming, Hooks, Reflection, And Monkey-Patching
 
-Natural thought after the lesson: "I can use Ruby's dynamism as controlled interface generation instead of runtime confetti."
+Natural thought after the lesson: "I can use Ruby's dynamism to generate controlled interfaces without making runtime behavior hard to trace."
 
 Objectives:
 
 - Use `define_method`, `class_eval`, `instance_eval`, `method_added`, `included`, `extended`, TracePoint, and reflection APIs.
 - Build a minimal capability DSL for the agent project.
-- Compare explicit registration with DSL magic.
+- Compare explicit registration with DSL-based registration, including how each affects readability, validation, and debugging.
 
 Exit criteria:
 
@@ -276,7 +276,7 @@ Exit criteria:
 
 ### A4. Networking, Protocols, And Capabilities
 
-Natural thought after the lesson: "I can use Ruby for protocol-shaped programs without hiding IO in framework fog."
+Natural thought after the lesson: "I can use Ruby for protocol-shaped programs while keeping IO, parsing, and domain behavior separate."
 
 Objectives:
 
@@ -298,7 +298,7 @@ Objectives:
 
 - Use Prism for parsing/lexing.
 - Survey Ripper as older standard-library AST exposure.
-- Inspect DSL files and detect questionable declarations.
+- Inspect DSL files and detect declarations that are ambiguous, incomplete, or unsupported.
 
 Exit criteria:
 
@@ -340,4 +340,3 @@ Code-reading pool:
 - Ruby standard library: `Enumerable`, `OptionParser`, `TSort`, `Net::HTTP`, `Prism` docs/source.
 - Respected gems: RuboCop AST patterns, RSpec expectations/mocks internals, Sidekiq job shape, Rack interface, Dry::Struct/Dry::Validation, Zeitwerk autoloading.
 - The Odin Project: use selected exercises for repetition and contrast, especially custom enumerables, linked list/hash map/tree labs, recursion, and testing projects. Do not follow it sequentially; it is too beginner-paced for this learner.
-

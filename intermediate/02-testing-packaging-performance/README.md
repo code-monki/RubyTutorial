@@ -9,7 +9,7 @@ You will see Ruby project structure, dependency management, tests, and performan
 - Use Minitest as the zero-dependency baseline.
 - Understand where Bundler and gemspecs enter the picture.
 - Compare obvious, idiomatic, optimized, and library approaches.
-- Measure before reaching for folklore.
+- Measure before accepting performance advice.
 
 ## Run
 
@@ -30,4 +30,3 @@ ruby -Ilib intermediate/02-testing-packaging-performance/examples/allocation_pro
 - You can run tests without a framework.
 - You can explain `Gemfile` versus `.gemspec`.
 - You can read a benchmark skeptically.
-

@@ -90,5 +90,4 @@ Exit criteria:
 
 - You can explain eigenclass, singleton method, ancestor chain, and method lookup in plain language.
 - You know why "open classes" are power tools, not house style.
-- You can defer clever metaprogramming until the API pressure justifies it.
-
+- You can defer metaprogramming until the API design problem clearly justifies it.

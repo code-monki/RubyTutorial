@@ -2,7 +2,7 @@
 
 ## What You Will Think Naturally After This Lesson
 
-You will design Ruby objects that participate in the language's collection vocabulary instead of merely wrapping arrays.
+You will design Ruby objects that participate in the language's collection vocabulary instead of only exposing an internal array.
 
 ## Learning Objectives
 
@@ -29,4 +29,3 @@ ruby -Ilib intermediate/01-enumerable-and-iterators/examples/custom_transcript_e
 - You can explain the protocol: `each` plus `Enumerable`.
 - You can name when `map.filter` is worse than `filter_map`.
 - You can decide when clarity beats shaving an allocation.
-

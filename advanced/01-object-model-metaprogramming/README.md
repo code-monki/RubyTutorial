@@ -2,7 +2,7 @@
 
 ## What You Will Think Naturally After This Lesson
 
-You will be able to predict method lookup, singleton method placement, module precedence, and the cost of clever APIs.
+You will be able to predict method lookup, singleton method placement, module precedence, and the maintenance cost of highly dynamic APIs.
 
 ## Learning Objectives
 
@@ -30,4 +30,3 @@ ruby -Ilib advanced/01-object-model-metaprogramming/examples/capability_dsl.rb
 - You can explain eigenclasses without mystical language.
 - You can predict method lookup order.
 - You can decide whether a DSL is earning its keep.
-

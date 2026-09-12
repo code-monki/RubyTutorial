@@ -22,5 +22,4 @@ You will treat Ruby as both a language and a runtime: parseable source, observab
 
 - You can separate protocol parsing from domain behavior.
 - You can inspect source without executing it.
-- You can discuss Ruby performance without repeating folklore.
-
+- You can discuss Ruby performance using measurements, runtime behavior, and clearly stated assumptions.

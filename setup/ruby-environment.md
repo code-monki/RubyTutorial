@@ -148,7 +148,7 @@ That combination is enough for this curriculum and for most normal Ruby applicat
 
 The older Ruby-specific tool you may remember is probably RVM gemsets. They are still a real concept, but this repo uses Bundler-local gems instead because it is more explicit, less tied to one version manager, and closer to how modern Ruby projects usually communicate dependencies.
 
-## Devil's Advocate
+## Tradeoff
 
 Per-project `vendor/bundle` is tidy but can consume disk space across many projects. If you work on a lot of Ruby repos, a version-manager gem home plus `bundle exec` may be sufficient. For a curriculum repo, the extra isolation is worth it because we will intentionally experiment with tooling gems, profilers, type checkers, and linters.
 

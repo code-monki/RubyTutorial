@@ -31,5 +31,8 @@ ruby basic/01-syntax-semantics/examples/traps.rb
 
 ## Adversarial Notes
 
-Optional parentheses are not a moral achievement. Rubyists often omit them when the call reads naturally, but production code is read under interruption. Clarity beats cosplay.
+Use optional parentheses deliberately.
 
+As a default, include parentheses when a method call has arguments, especially when the call is nested, chained, split across lines, or mixed with operators. Omit parentheses only when the call is a common Ruby convention and remains easier to read without them, such as zero-argument predicate-style calls or DSL-like declarations.
+
+In short: prefer parentheses unless omitting them makes the code more obviously Ruby and more readable.

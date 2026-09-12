@@ -28,5 +28,4 @@ ruby -Ilib basic/02-cli-agent-log/examples/agent_log.rb --file /tmp/agent.json l
 
 - You can keep CLI parsing separate from the library.
 - You can explain why `Message` freezes its content and metadata.
-- You can add a command without turning the file into framework-shaped sludge.
-
+- You can add a command while keeping parsing, validation, domain logic, and file IO in separate sections or objects.

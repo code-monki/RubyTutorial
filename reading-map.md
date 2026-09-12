@@ -50,11 +50,12 @@ Modify:
 
 - In `02_equality.rb`, add two arrays with the same contents, such as `[1, 2]` and `[1, 2]`. Print the result of `==`, `eql?`, and `equal?`.
 - Add two symbols with the same name, such as `:ruby` and `:ruby`. Print the result of `==`, `eql?`, and `equal?`.
-- Add a small custom class with one attribute. First run it without defining `==`, then define `==` and compare the output.
+- Add comparisons for `1` and `1.0` using `==`, `eql?`, and `equal?`. Compare the result with the existing string example.
 
 Exit:
 
 - Choose the right equality method for comparison, hash keys, and identity.
+- Explain why custom object equality is deferred until classes and method definitions have been introduced.
 
 ### Symbols, Strings, And Hash Keys
 

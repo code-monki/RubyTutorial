@@ -105,6 +105,12 @@ Read:
 
 - [Pattern matching](https://docs.ruby-lang.org/en/4.0/syntax/pattern_matching_rdoc.html).
 
+Note:
+
+- In a pattern, `String => content` means "match a `String`, then bind the matched value to the local variable `content`."
+- The standalone form `value => pattern` checks that `value` matches `pattern` and raises `NoMatchingPatternError` if it does not.
+- This is different from the older hash-rocket syntax, such as `{ "role" => "user" }`, which creates a hash key/value pair.
+
 Run:
 
 ```sh
@@ -115,10 +121,12 @@ Modify:
 
 - Add a pattern for an assistant message.
 - Add an unmatched shape and handle it explicitly.
+- Add one standalone `message => pattern` example that binds two local variables.
 
 Exit:
 
 - Use pattern matching for shape checks.
+- Explain the difference between `String => content` in a pattern and `"key" => value` in a hash.
 - Avoid replacing simple conditionals with pattern matching when it does not clarify the code.
 
 ## Intermediate Ruby

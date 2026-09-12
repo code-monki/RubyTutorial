@@ -138,9 +138,12 @@ Ruby:
 
 - Pattern matching can destructure arrays, hashes, and objects participating through protocol methods.
 - It is useful for shape checks, not a mandate to replace clear conditionals.
+- In a pattern, `SomeClass => name` checks the value with `SomeClass === value` and binds the matched value to `name`.
+- The standalone form `value => pattern` asserts that `value` matches `pattern`; if it does not, Ruby raises `NoMatchingPatternError`.
 
 Trap:
 
+- Do not confuse pattern binding, such as `String => content`, with hash key/value syntax, such as `{ "content" => "Hello" }`.
 - Pattern matching is not the same cultural center in Ruby as in Elixir, F#, OCaml, or modern Scala.
 
 ## Concurrency
